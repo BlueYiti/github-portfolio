@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Optional: smooth transition */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Creeper mode */
+@custom-variant creeper (&:where(.creeper, .creeper *));
